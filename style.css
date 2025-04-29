@@ -1,0 +1,174 @@
+button {
+  background-color: #1e6091;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #1e6091;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow",
+    Arial, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 500px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 4px 5px 15px #1e6091;
+  border: none;
+  border-radius: 20px;
+}
+
+.main-heading h1 {
+  color: #1e6091;
+}
+
+.profile-image {
+  background-image: url(assets/jurica-koletic-7YVZYZeITc8-unsplash.jpg);
+  height: 68px;
+  width: 68px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+}
+
+.user-information {
+  display: flex;
+  gap: 1rem;
+}
+
+.Account-info p {
+  color: #1e6091;
+  padding-top: 5px;
+}
+
+.UserName {
+  font-weight: 700;
+}
+
+.heading2 {
+  color: #1e6091;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+input[type="password"] {
+  width: 180%;
+  padding-right: 0;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #1e6091;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+input:focus {
+  border: 1px solid #1e6091;
+  outline: none;
+}
+
+.buttons {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.continue-btn {
+  margin-right: 20px;
+  width: 110px;
+  height: 45px;
+}
+
+/* Layout container */
+.stay-signed-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+/* Slider circle */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+input:checked + .slider {
+  background-color: #1e6091;
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+.label-text {
+  color: #1e6091;
+  font-weight: 600;
+}
+
+.reset-pass a {
+  color: #1e6091;
+}
